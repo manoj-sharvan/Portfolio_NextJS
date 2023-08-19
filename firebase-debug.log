@@ -1,0 +1,84 @@
+[debug] [2023-08-19T17:57:32.321Z] ----------------------------------------------------------------------
+[debug] [2023-08-19T17:57:32.325Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-19T17:57:32.326Z] CLI Version:   12.4.8
+[debug] [2023-08-19T17:57:32.326Z] Platform:      win32
+[debug] [2023-08-19T17:57:32.327Z] Node Version:  v16.19.1
+[debug] [2023-08-19T17:57:32.328Z] Time:          Sat Aug 19 2023 23:27:32 GMT+0530 (India Standard Time)
+[debug] [2023-08-19T17:57:32.328Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-19T17:57:32.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-19T17:57:32.471Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
+[debug] [2023-08-19T17:57:32.471Z] [iam] checking project portfolio-58386 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-19T17:57:32.474Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions [none]
+[debug] [2023-08-19T17:57:32.475Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions x-goog-quota-user=projects/portfolio-58386
+[debug] [2023-08-19T17:57:32.475Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-19T17:57:33.885Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions 200
+[debug] [2023-08-19T17:57:33.886Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-19T17:57:33.888Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
+[debug] [2023-08-19T17:57:34.503Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
+[debug] [2023-08-19T17:57:34.503Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_a250edd1-157a-4059-94a3-14c6a8bb7329"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] info  - Loaded env from D:\portfolio\.env.local
+
+[info] info  - Linting and checking validity of types...
+
+[info] info  - Creating an optimized production build...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\portfolio\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\portfolio\\.next\\trace'
+}
+
+[debug] [2023-08-19T17:58:23.202Z] Error: ENOENT: no such file or directory, open 'D:\portfolio\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-19T17:59:05.662Z] ----------------------------------------------------------------------
+[debug] [2023-08-19T17:59:05.667Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-19T17:59:05.668Z] CLI Version:   12.4.8
+[debug] [2023-08-19T17:59:05.669Z] Platform:      win32
+[debug] [2023-08-19T17:59:05.669Z] Node Version:  v16.19.1
+[debug] [2023-08-19T17:59:05.670Z] Time:          Sat Aug 19 2023 23:29:05 GMT+0530 (India Standard Time)
+[debug] [2023-08-19T17:59:05.670Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-19T17:59:05.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-19T17:59:05.794Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-19T17:59:13.672Z] Using project from CLI flag: portfolio-58386
+[debug] [2023-08-19T17:59:13.675Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
+[debug] [2023-08-19T17:59:14.318Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
+[debug] [2023-08-19T17:59:14.318Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_a250edd1-157a-4059-94a3-14c6a8bb7329"}
+[info] i  Using project portfolio-58386 (Portfolio) 
+[info] 
+=== Hosting Setup
