@@ -36,4 +36,4 @@ Welcome to my portfolio! This website serves as a hub to learn more about me, my
 1. Clone this repository to your local machine:
 
    ```sh
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/Manoj977/Portfolio_NextJS.git
