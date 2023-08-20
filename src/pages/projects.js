@@ -151,7 +151,7 @@ const projects = () => {
             <div className='col-span-6 sm:col-span-12'>
               <Project
                 title='Invoice Application'
-                summary="I'm in the part of Product Creation and Dashbaord Creation and Integration"
+                summary="I'm in the part of Product and Dashboard Creation"
                 img={""}
                 link='/'
                 type='Internal Project'
