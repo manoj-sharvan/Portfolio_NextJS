@@ -8,8 +8,8 @@ const Details = ({ Position, company, companyLink, time, address, work }) => {
     <li
       ref={ref}
       className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]'
-      aria-label={`${Position} at ${company}, ${time}: ${work}`} // ARIA label for accessibility
       role='listitem' // ARIA role for semantic meaning
+      aria-label={`${Position} at ${company}, ${time}: ${work}`} // ARIA label for accessibility
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -17,21 +17,30 @@ const Details = ({ Position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
+        <h3
+          id={`position-${Position}`}
+          className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'
+        >
           {Position}&nbsp;
           <a
             href={companyLink}
             className='text-primary capitalize'
             target='_blank'
-            rel='noopener noreferrer' // Added rel attribute for security
+            rel='noopener noreferrer'
+            aria-label={`Visit ${company}`} // ARIA label for accessibility
           >
             @{company}
           </a>
         </h3>
-        <span className='capitalize font-medium text-dark/75 xs:text-sm'>
+        <span
+          className='capitalize font-medium text-dark/75 xs:text-sm'
+          aria-label={`Duration: ${time}, Location: ${address}`} // ARIA label for accessibility
+        >
           {time} | {address}
         </span>
-        <p className='font-medium w-full md:text-sm'>{work}</p>
+        <p className='font-medium w-full md:text-sm' aria-label="Work Description">
+          {work}
+        </p>
       </motion.div>
     </li>
   );
@@ -52,7 +61,7 @@ const Experience = () => {
         ref={ref}
         className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'
         role='list' // ARIA role for semantic meaning
-        aria-label='Experience Timeline' // ARIA label for accessibility
+        aria-label='Experience' // ARIA label for accessibility
       >
         <motion.div
           style={{
