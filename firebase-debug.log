@@ -1,22 +1,22 @@
-[debug] [2023-08-19T19:10:31.859Z] ----------------------------------------------------------------------
-[debug] [2023-08-19T19:10:31.863Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2023-08-19T19:10:31.864Z] CLI Version:   12.4.8
-[debug] [2023-08-19T19:10:31.864Z] Platform:      win32
-[debug] [2023-08-19T19:10:31.865Z] Node Version:  v16.19.1
-[debug] [2023-08-19T19:10:31.866Z] Time:          Sun Aug 20 2023 00:40:31 GMT+0530 (India Standard Time)
-[debug] [2023-08-19T19:10:31.867Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T02:00:14.868Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T02:00:14.873Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-20T02:00:14.874Z] CLI Version:   12.4.8
+[debug] [2023-08-20T02:00:14.874Z] Platform:      win32
+[debug] [2023-08-20T02:00:14.875Z] Node Version:  v16.19.1
+[debug] [2023-08-20T02:00:14.877Z] Time:          Sun Aug 20 2023 07:30:14 GMT+0530 (India Standard Time)
+[debug] [2023-08-20T02:00:14.877Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-19T19:10:31.986Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-19T19:10:31.987Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
-[debug] [2023-08-19T19:10:31.987Z] [iam] checking project portfolio-58386 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2023-08-19T19:10:31.991Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions [none]
-[debug] [2023-08-19T19:10:31.992Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions x-goog-quota-user=projects/portfolio-58386
-[debug] [2023-08-19T19:10:31.992Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-08-19T19:10:33.459Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions 200
-[debug] [2023-08-19T19:10:33.459Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-08-19T19:10:33.461Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
-[debug] [2023-08-19T19:10:34.078Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
-[debug] [2023-08-19T19:10:34.079Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_95dcb7a8-f224-4289-a0ce-b345338ace08"}
+[debug] [2023-08-20T02:00:15.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-20T02:00:15.034Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
+[debug] [2023-08-20T02:00:15.034Z] [iam] checking project portfolio-58386 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-20T02:00:15.040Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions [none]
+[debug] [2023-08-20T02:00:15.040Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions x-goog-quota-user=projects/portfolio-58386
+[debug] [2023-08-20T02:00:15.041Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-20T02:00:16.465Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions 200
+[debug] [2023-08-20T02:00:16.466Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-20T02:00:16.468Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
+[debug] [2023-08-20T02:00:16.850Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
+[debug] [2023-08-20T02:00:16.850Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_95dcb7a8-f224-4289-a0ce-b345338ace08"}
 [info] 
    Thank you for trying our early preview of Next.js support on Firebase Hosting.
    During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
@@ -31,90 +31,37 @@
 
 [info] info  - Creating an optimized production build...
 
-[info] info  - Compiled successfully
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\Portfolio_NextJS\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\Portfolio_NextJS\\.next\\trace'
+}
 
-[info] info  - Collecting page data...
-
-[info] info  - Generating static pages (0/5)
-
-[info] info  - Generating static pages (1/5)
-
-[info] info  - Generating static pages (2/5)
-
-[info] info  - Generating static pages (3/5)
-
-[info] info  - Generating static pages (5/5)
-
-[info] info  - Finalizing page optimization...
-
-[info] 
-
-[info] Route (pages)                              Size     First Load JS
-┌ ○ /                                      2.12 kB         128 kB
-├   /_app                                  0 B             122 kB
-├ ○ /404                                   182 B           122 kB
-├ ○ /about                                 7.39 kB         133 kB
-├ λ /api/hello                             0 B             122 kB
-└ ○ /projects                              2.37 kB         128 kB
-+ First Load JS shared by all              128 kB
-  ├ chunks/framework-2c79e2a64abdb08b.js   45.2 kB
-  ├ chunks/main-0ecb9ccfcb6c9b24.js        27 kB
-  ├ chunks/pages/_app-94c29aa685025a25.js  49.3 kB
-  ├ chunks/webpack-8fa1640cc84ba8fe.js     750 B
-  └ css/0a181e04589b7855.css               5.38 kB
-
-[info] 
-λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
-○  (Static)  automatically rendered as static HTML (uses no initial props)
-
-
-[info] Building a Cloud Function to run this application. This is needed due to:
-[info]  • Image Optimization
-[info]  • non-static route /api/hello
-[info] 
-[debug] [2023-08-19T19:12:12.261Z] Error: Command failed: npm i --omit dev --no-audit
-    at checkExecSyncError (node:child_process:861:11)
-    at execSync (node:child_process:932:15)
-    at prepareFrameworks (C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+[debug] [2023-08-20T02:01:07.218Z] Error: Unable to find the next dep, try NPM installing?
+    at getConfig (C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:386:19)
+    at build (C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:68:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async prepareFrameworks (C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
     at async deploy (C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
 [error] 
 [error] Error: An unexpected error has occurred.
-[debug] [2023-08-19T19:12:29.516Z] ----------------------------------------------------------------------
-[debug] [2023-08-19T19:12:29.520Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-08-19T19:12:29.521Z] CLI Version:   12.4.8
-[debug] [2023-08-19T19:12:29.522Z] Platform:      win32
-[debug] [2023-08-19T19:12:29.522Z] Node Version:  v16.19.1
-[debug] [2023-08-19T19:12:29.524Z] Time:          Sun Aug 20 2023 00:42:29 GMT+0530 (India Standard Time)
-[debug] [2023-08-19T19:12:29.525Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T02:03:27.342Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T02:03:27.347Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-20T02:03:27.348Z] CLI Version:   12.4.8
+[debug] [2023-08-20T02:03:27.349Z] Platform:      win32
+[debug] [2023-08-20T02:03:27.349Z] Node Version:  v16.19.1
+[debug] [2023-08-20T02:03:27.351Z] Time:          Sun Aug 20 2023 07:33:27 GMT+0530 (India Standard Time)
+[debug] [2023-08-20T02:03:27.351Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-19T19:12:29.647Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-19T19:12:29.648Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\Portfolio_NextJS
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2023-08-19T19:12:45.214Z] Using project from CLI flag: portfolio-58386
-[debug] [2023-08-19T19:12:45.218Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
-[debug] [2023-08-19T19:12:45.660Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
-[debug] [2023-08-19T19:12:45.660Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_95dcb7a8-f224-4289-a0ce-b345338ace08"}
-[info] i  Using project portfolio-58386 (Portfolio) 
-[info] 
-=== Hosting Setup
+[debug] [2023-08-20T02:03:27.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-20T02:03:27.896Z] > authorizing via signed-in user (manojsaravanan212@gmail.com)
+[debug] [2023-08-20T02:03:27.896Z] [iam] checking project portfolio-58386 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-20T02:03:27.912Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions [none]
+[debug] [2023-08-20T02:03:27.913Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions x-goog-quota-user=projects/portfolio-58386
+[debug] [2023-08-20T02:03:27.913Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-20T02:03:29.576Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions 200
+[debug] [2023-08-20T02:03:29.577Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-58386:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-20T02:03:29.581Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 [none]
+[debug] [2023-08-20T02:03:29.982Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 200
+[debug] [2023-08-20T02:03:29.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-58386 {"projectId":"portfolio-58386","projectNumber":"1098956107142","displayName":"Portfolio","name":"projects/portfolio-58386","resources":{"hostingSite":"portfolio-58386"},"state":"ACTIVE","etag":"1_95dcb7a8-f224-4289-a0ce-b345338ace08"}

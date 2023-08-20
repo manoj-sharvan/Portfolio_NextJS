@@ -165,7 +165,7 @@ const projects = () => {
                 img={""}
                 link='/'
                 type='Internal Project'
-                technology="React,Materail UI"
+                technology="React,Material UI"
               />
             </div>
           </div>
