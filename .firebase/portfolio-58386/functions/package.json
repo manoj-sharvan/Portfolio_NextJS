@@ -1,0 +1,24 @@
+{
+  "name": "developer-portfolio-starter-code",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.6.0",
+    "next": "13.2.4",
+    "next-link": "^2.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-firebaseui": "^6.0.0",
+    "sharp": "^0.32.1",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "16"
+  }
+}
