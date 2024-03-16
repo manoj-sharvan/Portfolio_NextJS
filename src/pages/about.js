@@ -11,7 +11,7 @@ import Experience from '@/Components/Experience';
 import Education from '@/Components/Education';
 import TransitionEffect from "@/Components/TransitionEffect";
 
-const AnimatedNumbers = ({ value }) => {
+const AnimatedNumbers = ({ value, isDecimal }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
@@ -25,25 +25,48 @@ const AnimatedNumbers = ({ value }) => {
 
   useEffect(() => {
     springValue.on('change', (latest) => {
-      if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0);
+      if (ref.current && latest <= value) {
+        if (isDecimal) {
+          ref.current.textContent = latest.toFixed(1);
+        } else {
+          ref.current.textContent = latest.toFixed(0);
+        }
       }
     });
-  }, [springValue, value]);
+  }, [springValue, value, isDecimal]);
 
   return <span ref={ref} aria-live="polite"></span>;
 };
+
+const calculateYearsOfExperience = (careerStartDate) => {
+  const startDate = new Date(careerStartDate);
+  const currentDate = new Date();
+
+  // Calculate the difference in milliseconds between the current date and start date
+  const differenceInMillis = currentDate - startDate;
+
+  // Convert milliseconds to years (assuming 365 days in a year)
+  const yearsOfExperience = differenceInMillis / (1000 * 60 * 60 * 24 * 365);
+
+  // Return the number of years rounded to 1 decimal place
+  return yearsOfExperience.toFixed(1);
+};
+
+// Usage example with career start date 10th October 2022
+const careerStartDate = new Date('2022-10-10');
+const yearsOfExperience = Number(calculateYearsOfExperience(careerStartDate));
+
 
 const about = () => {
   return (
     <>
       <Head>
         <title>Manoj | About Page</title>
-        <meta name='description' content="Hi, I'm Manoj, a Front end developer with a passion for creating
+        <meta name='description' content={`Hi, I'm Manoj, a Front end developer with a passion for creating
                 beautiful, functional, and user-centered digital experiences.
-                With 3 years of experience in the field. I am always looking
+                With ${yearsOfExperience} years of experience in the field. I am always looking
                 for new and innovative ways to bring my clients' visions to
-                life." />
+                life.`} />
       </Head>
       <TransitionEffect />
       <main
@@ -68,7 +91,7 @@ const about = () => {
               <div className='biography-content' tabIndex={0}>
                 <p className='font-medium'>
                   Hello, I'm Manoj, a web developer who is also well-versed
-                  in accessibility practices. With over 3 years of experience,
+                  in accessibility practices. With over {yearsOfExperience} years of experience,
                   my goal is to craft visually appealing, functional, and
                   inclusively designed digital experiences that can be
                   seamlessly accessed by blind users.
@@ -113,7 +136,7 @@ const about = () => {
                   className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'
                   aria-live="polite"
                 >
-                  <AnimatedNumbers value={5} />
+                  <AnimatedNumbers value={5} isDecimal={false} />
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>
                   <span id="projects-completed-label">Projects Completed</span>
@@ -124,7 +147,7 @@ const about = () => {
                   className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'
                   aria-live="polite"
                 >
-                  <AnimatedNumbers value={3} />
+                  <AnimatedNumbers value={yearsOfExperience} isDecimal={true} />
                 </span>
                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>
                   <span id="years-of-experience-label">Years of Experience</span>
