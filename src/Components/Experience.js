@@ -74,7 +74,7 @@ const Experience = () => {
             Position='Software Engineer'
             company='Zlendo'
             companyLink='https://www.zlendo.com'
-            time='2023 - present'
+            time='2022 - present'
             address='Madurai, India'
             work="Worked on a team responsible for developing new features for Zlendo's internal Application,
             creating new sites for internal employee use and visualization."
