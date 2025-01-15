@@ -42,18 +42,14 @@ const calculateYearsOfExperience = (careerStartDate) => {
   const startDate = new Date(careerStartDate);
   const currentDate = new Date();
 
-  // Calculate the difference in milliseconds between the current date and start date
   const differenceInMillis = currentDate - startDate;
 
-  // Convert milliseconds to years (assuming 365 days in a year)
   const yearsOfExperience = differenceInMillis / (1000 * 60 * 60 * 24 * 365);
 
-  // Return the number of years rounded to 1 decimal place
   return yearsOfExperience.toFixed(1);
 };
 
-// Usage example with career start date 10th October 2022
-const careerStartDate = new Date('2022-10-10');
+const careerStartDate = new Date('2022-01-10');
 const yearsOfExperience = Number(calculateYearsOfExperience(careerStartDate));
 
 
