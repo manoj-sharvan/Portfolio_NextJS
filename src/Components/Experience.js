@@ -35,7 +35,7 @@ const Details = ({ Position, company, companyLink, time, address, work }) => {
           )}
         </h3>
         <span
-          className="capitalize font-medium text-dark/75 xs:text-sm"
+          className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm"
           aria-label={`Duration: ${time}, Location: ${address}`} // ARIA label for accessibility
         >
           {time} | {address}
@@ -81,8 +81,8 @@ const Experience = () => {
             companyLink="https://www.zlendo.com"
             time="Oct 2022 - present"
             address="Madurai, India"
-            work="Worked on a team responsible for developing new features for Zlendo's internal Application,
-            creating new sites for internal employee use and visualization."
+            work="Frontend Developer at Zlendo, specializing in React, Redux, API integration, SPFx, SharePoint, and 
+            scalable solutions for contract management and leave systems."
           />
           <Details
             Position="Software Developer"
@@ -90,7 +90,7 @@ const Experience = () => {
             companyLink=""
             time="Jan 2022 - Sept 2022"
             address="Freelance"
-            work=""
+            work="Designed and developed responsive web applications using React.js, HTML5, CSS3, JavaScript, ensuring interactive interfaces and cross-browser compatibility."
           />
         </ul>
       </div>
