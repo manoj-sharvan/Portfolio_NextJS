@@ -20,10 +20,10 @@ const Details = ({ type, time, place, info }) => {
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {type}
         </h3>
-        <span className="capitalize font-medium text-dark/75 xs:text-sm">
-          {time} | {place}
-        </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        <p className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+          {time && `${time} | `} {place}
+        </p>
+        <p className="font-medium w-full md:text-sm  ">{info}</p>
       </motion.div>
     </li>
   );
@@ -55,13 +55,13 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             type="Bachelor of Electrical and Electronics Engineering"
-            time="2015-2019"
+            // time="2015-2019"
             place="Gnanamani College of technology"
             info="Electrical Engineering"
           />
           <Details
             type="Java Full Stack Developer"
-            time="2021-2022"
+            time=""
             place="Apollo Computer Education"
             info="Java, React, MSSQL, Html, Css, Javascript."
           />
