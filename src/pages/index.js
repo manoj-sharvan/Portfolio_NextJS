@@ -19,11 +19,11 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full d-flex items-center justify-evenly">
+            <div className="w-1/2 md:w-full flex items-center justify-evenly">
               <Image
                 src={profilePic}
                 alt="Profile"
-                className="w-[350px] h-[350px] border border-solid border-dark rounded-full xl:w-[400px] xl:h-[400px] lg:w-[300px] lg:h-[300px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xs:w-[100px] xs:h-[100px] lg:hidden md:inline-block"
+                className="w-[350px] h-[350px] d-flex items-center justify-evenly border border-solid border-dark rounded-3xl xl:w-[400px] xl:h-[400px] lg:w-[300px] lg:h-[300px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xs:w-[100px] xs:h-[100px] lg:hidden md:inline-block"
                 priority
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
