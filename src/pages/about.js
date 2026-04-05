@@ -53,7 +53,7 @@ const calculateYearsOfExperience = (careerStartDate) => {
   return yearsOfExperience.toFixed(1);
 };
 
-const careerStartDate = new Date("2022-01-10");
+const careerStartDate = new Date("2022-10-10");
 const yearsOfExperience = Number(calculateYearsOfExperience(careerStartDate));
 
 const about = () => {
