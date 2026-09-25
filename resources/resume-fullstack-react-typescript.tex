@@ -1,0 +1,176 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage[left=0.62in,right=0.62in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{cmap}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.06in,
+  itemsep=2pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}\rule{\textwidth}{0.5pt}]
+
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}%
+  \textbf{#1} \hfill \textbf{#2}\\
+  \textit{#3} \hfill \textit{#4}\\[-3pt]
+}
+
+\newcommand{\resumeProject}[2]{%
+  \vspace{2pt}%
+  \textbf{#1} \hfill \textit{#2}\\[-6pt]
+}
+
+\begin{document}
+
+% ============================================================
+% HEADER
+% ============================================================
+
+\begin{center}
+  {\LARGE \textbf{MANOJ S}}\\[2pt]
+  \textbf{Full Stack Software Engineer | React.js | TypeScript | Node.js | AI Applications}\\[3pt]
+  Chennai, India \ $|$ \ +91 8667671121 \ $|$ \ \href{mailto:manojsharvan@gmail.com}{manojsharvan@gmail.com}\\[1pt]
+  \href{https://linkedin.com/in/manoj-sharvan}{linkedin.com/in/manoj-sharvan} \ $|$ \ \href{https://github.com/Manoj-sharvan}{github.com/Manoj-sharvan} \ $|$ \ \href{https://manojsharvan.vercel.app}{manojsharvan.vercel.app}
+\end{center}
+
+\vspace{-3pt}
+
+% ============================================================
+% PROFESSIONAL SUMMARY
+% ============================================================
+
+\section{Professional Summary}
+
+Full Stack Software Engineer with \textbf{3+ years of professional experience} engineering high-performance web applications across the full application lifecycle using \textbf{React.js, TypeScript, JavaScript, and Node.js}. Proven expertise in architecting API-driven client-server workflows, server-state caching, secure JWT/RBAC authorization, webhook-driven subscription lifecycles, and \textbf{LLM-powered streaming user experiences}. Delivered proven enterprise impact including a \textbf{35\% increase in buyer engagement}, \textbf{40\% faster initial page loads}, \textbf{25\% faster UI feature delivery across 3 teams}, and \textbf{30\% fewer production regressions} across multi-tenant enterprise SaaS platforms.
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+
+\section{Technical Skills}
+
+\textbf{Frontend:} React.js, TypeScript, JavaScript (ES6+), Next.js, React Router, React Hooks, HTML5, CSS3, Responsive Design, Accessibility (WCAG / WAI-ARIA)\\
+\textbf{Backend \& APIs:} Node.js, Express.js, REST APIs, API Integration, API Design, Authentication, Authorization, JWT, RBAC, Webhooks\\
+\textbf{State Management:} Redux Toolkit, Zustand, TanStack Query, Context API, Server-State Management, Caching Strategies\\
+\textbf{Databases:} SQL, PostgreSQL, MongoDB\\
+\textbf{AI Engineering:} LLM APIs, OpenAI/Gemini APIs, Streaming Responses, Server-Sent Events (SSE), Conversational UI, Prompt Engineering, Structured AI Workflows, RAG Fundamentals\\
+\textbf{Cloud \& DevOps:} AWS, Amazon S3, AWS Cognito, Git, GitHub, GitHub Actions, CI/CD, Docker, Vite, Webpack\\
+\textbf{UI \& Design Systems:} Material UI, Tailwind CSS, Bootstrap, Styled Components, Storybook, Design Systems, Design Tokens\\
+\textbf{Testing:} Jest, React Testing Library, Cypress, Unit Testing, Integration Testing, E2E Testing\\
+\textbf{Performance \& Architecture:} Code Splitting, Lazy Loading, Web Vitals, Lighthouse, Bundle Analysis, API Caching, Performance Optimization\\
+\textbf{3D \& Interactive Graphics:} Three.js, Konva.js, 2D/3D Visualization, Canvas Rendering, Interactive Floor Plans, Dynamic Viewports\\
+\textbf{Specialized Integrations:} SPFx, OnlyOffice, Razorpay, Payment Integration, Webhooks
+
+% ============================================================
+% PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+
+\resumeSubheading
+  {ZLENDO TECHNOLOGY PVT LTD}{October 2022 -- June 2026}
+  {Frontend Software Engineer (Full Stack Application Scope)}{Madurai, India}
+
+\resumeProject
+  {ZRealty --- 3D Real Estate Visualization Platform}{React.js \ $|$ \ TypeScript \ $|$ \ Konva.js \ $|$ \ Three.js \ $|$ \ REST APIs}
+\begin{itemize}
+  \item Engineered an interactive \textbf{2D/3D real-estate visualization web application} integrating React, TypeScript, Konva.js, and Three.js for synchronized canvas-based floor-plan editing and dynamic 3D spatial property walkthroughs.
+  \item Architected modular canvas manipulation pipelines, object transformation matrices, and interactive viewport state synchronized with asynchronous property catalog API endpoints.
+  \item Delivered resilient client-side state architectures unifying 2D coordinate layouts with 3D scene rendering, directly driving a verified \textbf{35\% increase in buyer engagement}.
+\end{itemize}
+\vspace{0.3cm}
+\resumeProject
+  {Clife --- Multi-Tenant Contract Management System}{React.js \ $|$ \ TypeScript \ $|$ \ TanStack Query \ $|$ \ OnlyOffice \ $|$ \ REST APIs}
+\begin{itemize}
+  \item Designed configurable \textbf{client-server frontend architecture} featuring dynamic template builders, contract clause authoring, and role-tailored approval dashboards, reducing contract configuration time by \textbf{30\%}.
+  \item Coordinated multi-stage contract approval lifecycles, document revision histories, and tenant-isolated data isolation across \textbf{50+ enterprise tenants}.
+  \item Integrated \textbf{OnlyOffice document servers} into the web interface, enabling real-time multi-user document collaboration and automated revision tracking within enterprise tenant sandboxes.
+  \item Engineered secure, token-validated file upload and download pipelines with authenticated request headers and controlled REST API endpoints.
+  \item Integrated \textbf{TanStack Query} for robust server-state orchestration, intelligent cache invalidation, background refetching, and asynchronous REST API contract alignment.
+  \item Enforced client-side \textbf{JWT authentication and RBAC multi-role authorization pipelines} to safeguard sensitive legal actions across multi-stage review workflows.
+\end{itemize}
+\vspace{0.2cm}
+\resumeProject
+  {RisePage --- SharePoint Enterprise Intranet Portal}{React.js \ $|$ \ TypeScript \ $|$ \ SPFx \ $|$ \ REST APIs \ $|$ \ Bootstrap}
+\begin{itemize}
+  \item Built \textbf{15+ interactive SPFx (SharePoint Framework) enterprise modules} consuming Microsoft Graph and SharePoint REST endpoints to deliver real-time corporate communications, announcements, and calendars.
+  \item Implemented responsive, enterprise-grade layouts leveraging Bootstrap, semantic HTML5, WAI-ARIA accessibility compliance, and full keyboard navigation.
+  \item Conducted cross-platform validation across Chrome, Firefox, Safari, and Edge, contributing to a documented \textbf{40\% increase in employee engagement}.
+\end{itemize}
+\vspace{0.2cm}
+\resumeProject
+  {ZSuite --- Enterprise HRMS SaaS Platform}{React.js \ $|$ \ TypeScript \ $|$ \ Material UI \ $|$ \ Jest \ $|$ \ Cypress \ $|$ \ Webhooks}
+\begin{itemize}
+  \item Engineered and maintained a centralized \textbf{Material UI component library} with custom design tokens, theme providers, and comprehensive Storybook documentation, accelerating UI development velocity by \textbf{25\% across 3 engineering teams}.
+  \item Optimized end-to-end web performance by \textbf{40\% faster initial page loads} for \textbf{10K+ daily active users} through strategic route-based code splitting, lazy loading, Web Vitals audits, and bundle minimization.
+  \item Built comprehensive client-side authentication and \textbf{JWT-based Role-Based Access Control (RBAC)} governing multi-role route guards, navigation permission gates, and sensitive data access.
+  \item Integrated \textbf{Razorpay payment gateway workflows and webhook-driven subscription events} to handle automated billing cycles across \textbf{500+ enterprise clients}.
+  \item Established automated test suites using \textbf{Jest, React Testing Library, and Cypress E2E}, reaching \textbf{85\% test coverage} and driving a \textbf{30\% reduction in production regressions}.
+\end{itemize}
+
+% ============================================================
+% AI & FULL STACK PROJECTS
+% ============================================================
+
+\section{Projects}
+
+\resumeProject
+  {AI JIRA Storyboard --- Agile Development Assistant}{React.js \ $|$ \ TypeScript \ $|$ \ LLM APIs \ $|$ \ SSE Streaming}
+\begin{itemize}
+  \item Developed an AI-powered software planning application that ingests natural-language specifications and orchestrates LLM API calls to generate structured epics, user stories, acceptance criteria, and technical subtasks.
+  \item Engineered an asynchronous streaming UI leveraging \textbf{Server-Sent Events (SSE)} and readable streams for real-time incremental token rendering and conversational refinement loops.
+  \item Implemented debounced filtering, tabbed workflows, modal portals, and resilient error recovery to ensure seamless client-server interaction during high-latency generation cycles.
+\end{itemize}
+
+\resumeProject
+  {AI Wellness Conversational Assistant}{React.js \ $|$ \ TypeScript \ $|$ \ LLM APIs \ $|$ \ Real-Time State}
+\begin{itemize}
+  \item Engineered a responsive conversational AI application in React and TypeScript featuring streaming LLM message streams, resilient chat state management, and optimistic UI transitions.
+  \item Built modular conversation components, adaptive viewport layouts, and accessibility-compliant keyboard navigation for real-time user-agent dialog.
+\end{itemize}
+
+% ============================================================
+% LEADERSHIP & CONTRIBUTIONS
+% ============================================================
+
+\section{Leadership \& Contributions}
+
+\begin{itemize}
+  \item Conducted \textbf{80+ technical design and code reviews} enforcing TypeScript type safety, API contract hygiene, component reusability, and modern AI-assisted engineering standards.
+  \item Mentored \textbf{3 junior software engineers} on modern React/TypeScript patterns, client-server data synchronization, automated testing, and development workflows.
+\end{itemize}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+
+\section{Education}
+
+\resumeSubheading
+  {GNANAMANI COLLEGE OF TECHNOLOGY}{2015 -- 2019}
+  {Bachelor of Engineering --- Electrical \& Electronics Engineering}{Tamil Nadu, India}
+
+\end{document}

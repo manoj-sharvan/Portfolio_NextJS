@@ -1,5 +1,5 @@
 import Layout from "@/Components/Layout";
-import Head from "next/head";
+import SEO from "@/Components/SEO";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/Components/AnimatedText";
@@ -11,10 +11,11 @@ import TransitionEffect from "@/Components/TransitionEffect";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Manoj | Home</title>
-        <meta name="description" content="Home" />
-      </Head>
+      <SEO
+        title="Home"
+        description="Full Stack Software Engineer with 3+ years of professional experience in React.js, TypeScript, Node.js, AI applications, and interactive 2D/3D visualizations."
+        path="/"
+      />
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8 ">
@@ -23,7 +24,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Profile"
-                className="w-[350px] h-[350px] d-flex items-center justify-evenly border border-solid border-dark rounded-3xl xl:w-[400px] xl:h-[400px] lg:w-[300px] lg:h-[300px] md:w-[200px] md:h-[200px] sm:w-[150px] sm:h-[150px] xs:w-[100px] xs:h-[100px] lg:hidden md:inline-block"
+                className="w-87.5 h-87.5 flex items-center justify-evenly border border-solid border-dark rounded-3xl xl:w-100 xl:h-100 lg:w-75 lg:h-75 md:w-50 md:h-50 sm:w-37.5 sm:h-37.5 xs:w-25 xs:h-25 lg:hidden md:inline-block"
                 priority
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -32,22 +33,19 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col itmes-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text={"Turning Vision Into Reality With Code And Design."}
-                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl "
+                text={"Turning Vision Into Reality With Code And Modern Architecture."}
+                className="text-6xl! text-left! xl:text-5xl! lg:text-center! lg:text-6xl! md:text-5xl! sm:text-3xl!"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a skilled front-end developer, I am dedicated to turning
-                ideas into innovative web applications.
+                Full Stack Software Engineer with 3+ years of professional experience engineering high-performance web applications across the full lifecycle using React.js, TypeScript, Node.js, and LLM-powered streaming user experiences.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                {/* <Link
-                  href={'/dummy.pdf'}
-                  target={'_blank'}
-                  className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light dark:text-dark hover:dark:border-light md:p-2 md:px-4 md:text-base '
-                  download={true}
+                <Link
+                  href="/projects"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light dark:text-dark hover:dark:border-light md:p-2 md:px-4 md:text-base transition duration-200"
                 >
-                  Resume <LinkArrow className={'w-6 ml-1'} />
-                </Link> */}
+                  View Work <LinkArrow className={"w-6 ml-1"} />
+                </Link>
                 <Link
                   href={"mailto:manojsharvan@gmail.com"}
                   target={"_blank"}

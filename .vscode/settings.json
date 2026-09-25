@@ -1,0 +1,9 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.lint.conflictingClassNames": "ignore",
+  "tailwindCSS.lint.cssConflict": "ignore",
+  "tailwind.lint.conflictingClassNames": "ignore",
+  "tailwind.lint.cssConflict": "ignore",
+  "tailwindcss.lint.conflictingClassNames": "ignore",
+  "tailwindCSS.validate": false
+}

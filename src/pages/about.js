@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import AnimatedText from "@/Components/AnimatedText";
 import Layout from "@/Components/Layout";
-import Head from "next/head";
+import SEO from "@/Components/SEO";
 import React, { useEffect, useRef } from "react";
 import profile from "../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
@@ -37,7 +37,7 @@ const AnimatedNumbers = ({ value, isDecimal, isAdding }) => {
         }
       }
     });
-  }, [springValue, value, isDecimal]);
+  }, [springValue, value, isDecimal, isAdding]);
 
   return <span ref={ref} aria-live="polite"></span>;
 };
@@ -59,17 +59,12 @@ const yearsOfExperience = Number(calculateYearsOfExperience(careerStartDate));
 const about = () => {
   return (
     <>
-      <Head>
-        <title>Manoj | About Page</title>
-        <meta
-          name="description"
-          content={`Hi, I'm Manoj, a Front end developer with a passion for creating
-                beautiful, functional, and user-centered digital experiences.
-                With ${yearsOfExperience} years of experience in the field. I am always looking
-                for new and innovative ways to bring my clients' visions to
-                life.`}
-        />
-      </Head>
+      <SEO
+        title="About Me"
+        description={`Hi, I'm Manoj S, a Full Stack Software Engineer with ${yearsOfExperience}+ years of professional experience engineering React.js, TypeScript, Node.js applications, secure client-server workflows, and streaming AI experiences.`}
+        path="/about"
+        image="/images/profile/developer-pic-2.jpg"
+      />
       <TransitionEffect />
       <main
         className="flex w-full flex-col items-center justify-center text-dark dark:text-light"
@@ -82,7 +77,7 @@ const about = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="Passion Fuels Purpose! "
-            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl "
+            className="mb-16 lg:text-7xl! sm:text-6xl! xs:text-4xl!"
             aria-label="Passion Fuels Purpose"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
@@ -90,41 +85,27 @@ const about = () => {
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
-              <div className="biography-content" tabIndex={0}>
-                <p className="font-medium">
-                  Hello, I'm Manoj, a web developer who is also well-versed in
-                  accessibility practices. With over {yearsOfExperience} years
-                  of experience, my goal is to craft visually appealing,
-                  functional, and inclusively designed digital experiences that
-                  can be seamlessly accessed by blind users.
+              <div className="biography-content space-y-4 font-medium" tabIndex={0}>
+                <p>
+                  Hello, I'm Manoj S, a Full Stack Software Engineer with 3+ years of professional experience engineering high-performance web applications across the full application lifecycle using React.js, TypeScript, JavaScript, and Node.js. I specialize in architecting API-driven client-server workflows, server-state caching, secure JWT/RBAC authorization, and LLM-powered streaming user experiences.
                 </p>
-                <p className="my-4 font-medium">
-                  I possess a deep understanding of accessibility standards,
-                  ensuring that my creations are usable and enjoyable for
-                  everyone, including those who rely on screen readers and
-                  assistive technologies. In my view, design extends beyond
-                  aesthetics – it involves problem-solving and creating
-                  seamless, enjoyable interactions for users.
+                <p>
+                  At Zlendo Technology, I have delivered scalable solutions across full application scope—from 2D/3D visualization platforms with Three.js and Konva.js to multi-tenant contract management systems with TanStack Query and OnlyOffice, and enterprise HRMS platforms serving 10K+ daily active users.
                 </p>
-                <p className="font-medium">
-                  Whether I'm immersed in a website project or championing
-                  accessibility, I approach each endeavor with enthusiasm. I'm
-                  excited about the chance to contribute my expertise and
-                  enthusiasm to your upcoming project, making sure that it's not
-                  only visually stunning but also technically accessible.
+                <p>
+                  My engineering background bridges frontend architecture (Material UI, Tailwind CSS, Storybook), backend APIs & auth (Node.js, Express, REST APIs, Webhooks, JWT/RBAC), databases (PostgreSQL, MongoDB, SQL), and cloud/DevOps practices (AWS, Docker, CI/CD). I prioritize web accessibility, performance optimization, and rigorous testing with Jest and Cypress.
                 </p>
               </div>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              {/* Decorative Background */}
               <div
-                className="absolute top-0 -right-3  -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light "
+                className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-4xl bg-dark dark:bg-light"
                 aria-hidden="true"
               />
               {/* Profile Image */}
               <Image
                 src={profile}
-                alt="Manoj S - Web Developer"
+                alt="Manoj S - Full Stack Software Engineer"
                 className="w-full h-auto rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw,
@@ -140,7 +121,7 @@ const about = () => {
                   aria-live="polite"
                 >
                   <AnimatedNumbers
-                    value={10}
+                    value={15}
                     isDecimal={false}
                     isAdding={true}
                   />
@@ -160,6 +141,21 @@ const about = () => {
                   <span id="years-of-experience-label">
                     Years of Experience
                   </span>
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center xl:items-center">
+                <span
+                  className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl"
+                  aria-live="polite"
+                >
+                  <AnimatedNumbers
+                    value={80}
+                    isDecimal={false}
+                    isAdding={true}
+                  />
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                  <span>Code Reviews & Mentorship</span>
                 </h2>
               </div>
             </div>

@@ -50,20 +50,20 @@ const Education = () => {
           style={{
             scaleY: scrollYProgress,
           }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:text-dark dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-9 top-0 w-1 h-full bg-dark origin-top dark:bg-light md:w-0.5 md:left-7.5 xs:left-5"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor of Electrical and Electronics Engineering"
-            // time="2015-2019"
-            place="Gnanamani College of technology"
-            info="Electrical Engineering"
+            type="Full Stack Web Development Certification"
+            // time="2021 – 2022"
+            place="Apollo Computer Education"
+            info="Comprehensive training in React.js, JavaScript (ES6+), HTML5, CSS3, SQL database systems, and modern web application development."
           />
           <Details
-            type="Java Full Stack Developer"
-            time=""
-            place="Apollo Computer Education"
-            info="Java, React, MSSQL, Html, Css, Javascript."
+            type="Bachelor of Engineering — Electrical & Electronics Engineering"
+            // time="2015 – 2019"
+            place="Gnanamani College of Technology, Tamil Nadu, India"
+            info="Graduated with a strong foundation in core engineering, systems design, analytical problem solving, and computational logic."
           />
         </ul>
       </div>
