@@ -13,7 +13,7 @@ const CustomLink = ({ href, title, className = '' }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
+        className={`h-0.5 inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
           } dark:bg-light`}
       >
         &nbsp;
@@ -30,14 +30,13 @@ const CustomMobileLink = ({ href, title, className = '', toggle }) => {
   };
   return (
     <button
-      href={href}
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
       tabIndex="0"
     >
       {title}
       <span
-        className={`h-[2px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
+        className={`h-0.5 inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'
           } dark:bg-dark`}
       >
         &nbsp;
@@ -91,7 +90,7 @@ const Navbar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap ">
           <motion.a
-            href="https://github.com/manoj-sharvan"
+            href="https://github.com/Manoj-sharvan"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -101,8 +100,8 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-              href="https://www.linkedin.com/in/manoj-sharvan/"
-              target="_blank"
+            href="https://linkedin.com/in/manoj-sharvan"
+            target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 ml-3"
@@ -154,7 +153,7 @@ const Navbar = () => {
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2 ">
             <motion.a
-              href="https://github.com/Manoj977"
+              href="https://github.com/Manoj-sharvan"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -164,7 +163,7 @@ const Navbar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/manoj-saravanan-s/"
+              href="https://linkedin.com/in/manoj-sharvan"
               target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}

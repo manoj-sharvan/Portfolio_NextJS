@@ -1,0 +1,173 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage[left=0.62in,right=0.62in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{cmap}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.06in,
+  itemsep=2pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}\rule{\textwidth}{0.5pt}]
+
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{1pt}%
+  \textbf{#1} \hfill \textbf{#2}\\
+  \textit{#3} \hfill \textit{#4}\\[-3pt]
+}
+
+\newcommand{\resumeProject}[2]{%
+  \vspace{2pt}%
+  \textbf{#1} \hfill \textit{#2}\\[-6pt]
+}
+
+\begin{document}
+
+% ============================================================
+% HEADER
+% ============================================================
+
+\begin{center}
+  {\LARGE \textbf{MANOJ S}}\\[2pt]
+  \textbf{Frontend Software Engineer | React.js | TypeScript | AI-Enabled Web Applications}\\[3pt]
+  Chennai, India \ $|$ \ +91 8667671121 \ $|$ \ \href{mailto:manojsharvan@gmail.com}{manojsharvan@gmail.com}\\[1pt]
+  \href{https://linkedin.com/in/manoj-sharvan}{linkedin.com/in/manoj-sharvan} \ $|$ \ \href{https://github.com/Manoj-sharvan}{github.com/Manoj-sharvan} \ $|$ \ \href{https://manojsharvan.vercel.app}{manojsharvan.vercel.app}
+\end{center}
+
+\vspace{-3pt}
+
+% ============================================================
+% PROFESSIONAL SUMMARY
+% ============================================================
+
+\section{Professional Summary}
+
+Frontend Software Engineer with \textbf{3+ years of professional experience} building production-grade \textbf{React.js and TypeScript} applications, with hands-on experience integrating \textbf{LLM-powered interfaces, streaming conversational UI, and interactive 2D/3D visualizations}. Proven expertise across server-state management, component-driven design systems, enterprise SaaS architecture, and \textbf{AI-assisted engineering workflows}. Delivered measurable impact including a \textbf{35\% increase in buyer engagement}, \textbf{40\% faster initial page loads}, \textbf{25\% faster UI feature delivery across 3 teams}, and \textbf{30\% fewer production regressions} across multi-tenant enterprise SaaS applications.
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+
+\section{Technical Skills}
+
+\textbf{Frontend AI Integration:} LLM APIs, Streaming Responses, Conversational UI, Prompt-Driven Interfaces, Real-Time Chat State\\
+\textbf{AI Development Workflows:} AI Coding Agents, Context Engineering, Prompt-Driven Development, AI-Assisted Code Validation\\
+\textbf{Frontend Architecture \& Core:} React.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, React Hooks, React Router, Next.js\\
+\textbf{Graphics \& Interactive UI:} Three.js, Konva.js, 2D/3D Canvas Visualization, Interactive Floor Plans, Dynamic Viewports\\
+\textbf{State \& Server-State Management:} Redux Toolkit, Zustand, TanStack Query, Context API, REST APIs, API Integration, Webhooks\\
+\textbf{UI Engineering \& Design Systems:} Material UI, Tailwind CSS, Bootstrap, Styled Components, Storybook, Design Systems, Design Tokens\\
+\textbf{Testing \& Performance Optimization:} Jest, React Testing Library, Cypress, Unit Testing, Integration Testing, E2E Testing, Code Splitting, Lazy Loading, Web Vitals, Lighthouse Auditing, Bundle Analysis\\
+\textbf{Security, Workflows \& Tooling:} JWT Authentication, Role-Based Access Control (RBAC), Secure File Upload/Download, Razorpay Integration, Git, GitHub, GitHub Actions, Vite, Webpack
+
+% ============================================================
+% PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+
+\resumeSubheading
+  {ZLENDO TECHNOLOGY PVT LTD}{October 2022 -- June 2026}
+  {Frontend Software Engineer}{Madurai, India}
+
+\resumeProject
+  {ZRealty --- 3D Real Estate Visualization}{React.js \ $|$ \ TypeScript \ $|$ \ Konva.js \ $|$ \ Three.js}
+\begin{itemize}
+  \item Engineered an interactive \textbf{2D/3D real-estate visualization web application} utilizing React, TypeScript, Konva.js, and Three.js, enabling intuitive canvas-based floor-plan editing and immersive 3D property walkthroughs.
+  \item Developed modular canvas manipulation workflows, interactive layer toggling, object transformation controls, and responsive property showcase interfaces for high-fidelity client demonstrations.
+  \item Built reusable frontend state architectures for synchronized 2D floor-plan and 3D spatial rendering, directly driving a reported \textbf{35\% increase in buyer engagement}.
+\end{itemize}
+\vspace{0.2cm}
+\resumeProject
+  {Clife --- Contract Management System}{React.js \ $|$ \ TypeScript \ $|$ \ TanStack Query \ $|$ \ OnlyOffice}
+\begin{itemize}
+  \item Designed configurable \textbf{React and TypeScript frontend architecture} featuring dynamic clause/template builders and role-tailored dashboards, reducing contract configuration time by \textbf{30\%}.
+  \item Built robust enterprise workflows supporting multi-stage contract approval lifecycles, document version history tracking, and tenant-isolated user experiences across \textbf{50+ enterprise tenants}.
+  \item Embedded \textbf{OnlyOffice} into the React interface for seamless real-time collaborative document editing and revision workflows within a multi-tenant environment.
+  \item Implemented secure, validated file upload and download pipelines with token-authenticated headers and controlled REST API access.
+  \item Integrated \textbf{TanStack Query} for intelligent server-state management, cache invalidation, and asynchronous data synchronization aligned with structured REST API contracts.
+  \item Enforced client-side \textbf{JWT authentication and RBAC mechanisms} to safeguard sensitive legal document actions and stage-specific review pipelines.
+\end{itemize}
+\vspace{0.2cm}
+\resumeProject
+  {RisePage --- SharePoint Intranet Portal}{React.js \ $|$ \ TypeScript \ $|$ \ SPFx \ $|$ \ Bootstrap}
+\begin{itemize}
+  \item Developed \textbf{15+ interactive SPFx (SharePoint Framework) React modules} delivering real-time corporate announcements, event calendars, employee spotlights, and internal communications.
+  \item Implemented responsive, accessible interfaces leveraging Bootstrap, semantic HTML5, WAI-ARIA roles, and full keyboard navigation support.
+  \item Conducted cross-browser compatibility testing and validation across Chrome, Firefox, Safari, and Edge, contributing to a \textbf{40\% increase in employee engagement}.
+\end{itemize}
+\vspace{0.2cm}
+\resumeProject
+  {ZSuite --- HRMS Platform}{React.js \ $|$ \ TypeScript \ $|$ \ Material UI \ $|$ \ Jest \ $|$ \ Cypress}
+\begin{itemize}
+  \item Engineered and maintained a centralized \textbf{Material UI component library} with custom design tokens, theme providers, and comprehensive Storybook documentation, accelerating UI development velocity by \textbf{25\% across 3 engineering teams}.
+  \item Optimized enterprise SaaS frontend performance by \textbf{40\% faster initial page loads} for \textbf{10K+ daily active users} through strategic route-based code splitting, dynamic component lazy loading, bundle analysis, and Web Vitals/Lighthouse audits.
+  \item Developed secure client-side authentication and \textbf{JWT-based Role-Based Access Control (RBAC)} workflows to govern multi-role route guards, navigational state, and granular permission interfaces.
+  \item Integrated \textbf{Razorpay payment gateway workflows and webhooks} to support reliable automated subscription billing workflows across \textbf{500+ enterprise clients}.
+  \item Established automated frontend testing practices with \textbf{Jest, React Testing Library, and Cypress E2E suites}, achieving \textbf{85\% test coverage} and driving a \textbf{30\% reduction in production regressions}.
+\end{itemize}
+
+% ============================================================
+% PROJECTS
+% ============================================================
+
+\section{Projects}
+
+\resumeProject
+  {AI JIRA Storyboard}{React.js \ $|$ \ TypeScript \ $|$ \ LLM APIs}
+\begin{itemize}
+  \item Developed an AI-powered agile development assistant transforming natural-language requirements into structured epics, user stories, acceptance criteria, sprint tasks, and technical subtasks.
+  \item Engineered high-performance frontend interfaces with \textbf{streaming AI responses}, conversational refinement loops, debounced search filters, accessible tabbed interfaces, modal portals, and reusable UI components.
+  \item Integrated client-side LLM API workflows and structured prompt interfaces, accelerating requirements decomposition and ticket drafting workflows.
+\end{itemize}
+
+\resumeProject
+  {AI Wellness Conversational Assistant}{React.js \ $|$ \ TypeScript \ $|$ \ LLM APIs}
+\begin{itemize}
+  \item Engineered a responsive conversational AI application in React and TypeScript with real-time streaming text updates, resilient chat state management, and smooth message transitions.
+  \item Built modular chat components, fluid viewport-adaptive layouts, micro-interactions, and accessibility-compliant keyboard navigation for conversational interfaces.
+\end{itemize}
+
+% ============================================================
+% LEADERSHIP & CONTRIBUTIONS
+% ============================================================
+
+\section{Leadership \& Contributions}
+
+\begin{itemize}
+  \item Conducted \textbf{80+ technical design and code reviews} ensuring strict code quality, component reusability, TypeScript type safety, and engineering standard adherence.
+  \item Mentored \textbf{3 junior frontend developers} on modern React patterns, state management strategies, automated testing practices, and AI-assisted development workflows.
+\end{itemize}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+
+\section{Education}
+
+\resumeSubheading
+  {GNANAMANI COLLEGE OF TECHNOLOGY}{2015 -- 2019}
+  {Bachelor of Engineering --- Electrical \& Electronics Engineering}{Tamil Nadu, India}
+
+\end{document}
